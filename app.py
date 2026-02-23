@@ -1,5 +1,4 @@
 import sys
-import subprocess
 
 # --- INFUSED DIAGNOSTIC CHECK ---
 # This block attempts to catch import errors and guide the user
@@ -35,7 +34,6 @@ def main():
 
     # --- SIDEBAR INPUTS ---
     st.sidebar.header("🕹️ Control Panel")
-    st.sidebar.success("Python Environment: 3.14 Active")
     
     with st.sidebar.expander("Gas Power Cycle Settings", expanded=True):
         p_ratio = st.slider("Pressure Ratio ($r_p$)", 5.0, 20.0, 12.0)
